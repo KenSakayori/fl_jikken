@@ -14,5 +14,7 @@ let assignments =
    Ml.toi 3 [ty; subst; compose]
      ~alt:[Ml.toi_id 4];
    Ml.toi 4 [ty; subst; unify];
-   Interpreter.toi 5 [];
-   Interpreter.hatten 2 []]
+   Interpreter.toi 5 [Interpreter.build];
+   Interpreter.hatten 2 [];
+   Interpreter.hatten 3 [Interpreter.build]
+  ]
